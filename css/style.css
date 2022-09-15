@@ -1,0 +1,381 @@
+
+/*Normalize*/
+* {
+    padding: 0;
+    margin: 0;
+    color: black    ;
+}
+
+/*Elimiando subrayado y viñetas*/
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*Estableciento el tipo de fuente en títulos y subtítulos*/
+h1, h2, h3, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+p, a, label {
+    font-family: 'Work Sans', sans-serif;
+}
+
+header, footer{
+    background-color: #22AAA1;
+    height: 70px;
+    padding-top: 28px;
+}
+
+.logo {
+    width: 102px;
+    height: 16px;
+}
+
+
+/*footer {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}*/
+
+.nav-bar, .nav-footer {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+
+.nav-bar-menu li, .nav-footer-menu li {
+    display: inline;
+    margin: 10px;    
+}
+
+.nav-bar-contact {
+    background-color: #E7F6F2;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.nav-footer-rrss {
+    margin: 0;
+}
+
+.nav-footer-rrss svg {
+    margin: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.hero-image {
+    width: 520px;
+    height: 520px;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.intro-section div {
+    margin: 0;
+}
+
+.projects-section {
+    background-color: #E7F6F2;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.projects-section h2, div {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.projects-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.projects-card-1, .projects-card-2, .projects-card-3 {
+    width: 387px;
+    height: 304px;
+    border-radius: 16px;
+}
+
+.projects-arrows {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-arrows img {
+    margin: 10px;
+}
+
+.services-section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.services-section h2 {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.services-cards-1 {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-top: 56px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+
+.services-image {
+    width: 488px;
+    height: 589px;
+}
+
+.services-cards-2 div {
+    border-radius: 16px;
+    background-color: #E7F6F2;
+    /*margin: 0;*/
+    width: 590px;
+    height: 162px;
+}
+
+.services-cards-2 div h5, .services-cards-2 div p {
+    padding: 21px 40px;
+}
+
+.services-card-ux {
+    margin-top: 51.5px;
+    margin-bottom: 51.5px;
+    /*box-shadow: 13px 0px 25px -3px rgba(0,0,0,0.1);*/
+
+}
+
+.services-arrows {
+    width: 80px;
+    display: flex;
+    padding-left: 480px;
+}
+
+.testimonials-section {
+    background-color: #E7F6F2;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.testimonials-section h2 {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.testimonials-description {
+    margin: 0;
+}
+
+.testimonials-description h3 {
+    width: 800px;
+    margin-bottom: 16px;
+}
+
+.testimonials-image {
+    width: 386px;
+    height: 431px;
+}
+
+.quotes {
+    font-size: xx-large;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.contact-section a {
+    padding: 10px 20px;
+    background-color: #E7F6F2;
+    border-radius: 8px;
+    border: solid;
+    border-color: #22AAA1;
+    margin-top: 32px;
+}
+
+.projects-main {
+    margin: 152px 120px 152px 120px;
+}
+
+.plantae-img, .indeed-img, .landing-img {
+    width: 387px;
+    height: 300px;
+}
+
+.plantae-img, .landing-img {
+    border-radius: 14px 0 0 14px;
+}
+
+.indeed-img {
+    border-radius: 0 14px 14px 0;
+}
+
+.projects {
+    width: 800px;
+    margin-bottom: 56px;
+}
+
+.projects h1, .plantae-app h2, .indeed-app h2, .landing-web h2 {
+    margin-bottom: 16px;
+}
+
+.indeed-app {
+    margin: 56px 0 56px 0;
+}
+
+.plantae-app, .indeed-app, .landing-web {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid;
+    border-color: #22AAA1;
+    border-radius: 16px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ui-design, .web-design {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*margin-top: 152px;*/
+    height: 560px;
+    background-color: #E7F6F2;
+}
+
+.ui-design div, .web-design div {
+    margin: 0 0 0 120px;
+    width: 600px;
+}
+
+.ui-design-img, .web-design-img {
+    margin: 0 120px 0 0;
+}
+
+
+.ui-design-img, .ux-research-img, .web-design-img {
+    width: 387px;
+    height: 300px;
+}
+
+.ui-design h2, .ux-research h2, .web-design h2 {
+    margin-bottom: 16px;
+}
+
+.ux-research {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 560px;
+}
+
+.ux-research-img {
+    margin-left: 120px;
+}
+
+.ux-research div {
+    margin: 0 120px 0 0;
+    width: 600px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 56px 120px 56px 120px;
+}
+
+.about-me-img {
+    width: 400px;
+    height: 400px;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 56px 120px 152px 120px;
+}
+
+.experience div {
+    margin: 0 80px 0 80px;
+}
+
+.experience-title {
+    margin: 0 120px 0 120px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 152px 120px 152px 120px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #E7F6F2;
+}
+
+input {
+    background-color: #E7F6F2;
+}
+
+
+.contact-description {
+    width: 500px;
+    margin-left: 0;
+}
+
+
+.input-box, .input-box label {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 16px 12px 8px 12px;
+}
+
+.button {
+    margin: 12px 12px 16px 12px;
+}
