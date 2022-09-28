@@ -3,7 +3,8 @@
 * {
     padding: 0;
     margin: 0;
-    color: black    ;
+    box-sizing: border-box;
+    color: black;
 }
 
 /*Elimiando subrayado y viñetas*/
@@ -28,7 +29,9 @@ p, a, label {
 header, footer{
     background-color: #22AAA1;
     height: 70px;
-    padding-top: 28px;
+    display: grid;
+    align-items: center;
+    /*padding-top: 28px;*/
 }
 
 .logo {
@@ -81,6 +84,7 @@ header, footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 120px;
     margin-left: 120px;
     margin-right: 120px;
 }
@@ -97,7 +101,7 @@ header, footer{
     padding-bottom: 56px;
 }
 
-.projects-section h2, div {
+.projects-section h2, .projects-section div {
     margin-left: 120px;
     margin-right: 120px;
 }
@@ -149,6 +153,7 @@ header, footer{
     width: 488px;
     height: 589px;
 }
+
 
 .services-cards-2 div {
     border-radius: 16px;
@@ -343,6 +348,9 @@ header, footer{
 .experience-title {
     margin: 0 120px 0 120px;
 }
+
+
+/*Contact section*/
 
 .contact {
     display: flex;
