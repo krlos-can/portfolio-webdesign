@@ -59,10 +59,20 @@ header, footer{
     margin: 10px;    
 }
 
+.nav-bar-menu a:hover, .nav-footer-menu a:hover {
+    color:#E7F6F2;
+    font-weight: 500;
+}
+
 .nav-bar-contact {
     background-color: #E7F6F2;
     border-radius: 8px;
     padding: 10px 20px;
+}
+
+.nav-bar-contact:hover {
+    background-color:#ffffff;
+    font-weight: 700;
 }
 
 .nav-footer-rrss {
@@ -237,6 +247,12 @@ header, footer{
     margin-top: 32px;
 }
 
+.contact-section a:hover {
+    background-color: #22AAA1;
+    color: #E7F6F2;
+    font-weight: 700;
+}
+
 .projects-main {
     margin: 152px 120px 152px 120px;
 }
@@ -355,21 +371,65 @@ header, footer{
 .contact {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 152px 120px 152px 120px;
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
+.form {
+    display: grid;
+    /*flex-direction: column;*/
     width: 400px;
+    padding: 4.5em 3em;
+    gap: 2.5em;
     background-color: #E7F6F2;
 }
 
-input {
-    background-color: #E7F6F2;
+.input-box {
+    position: relative;
+    --color: #5757577e;
 }
 
+.form-input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgb(7, 0, 150);
+}
+
+
+
+.form-label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form-submit {
+    width: 100%;
+    background: #22AAA1;
+    color: #E7F6F2;
+    border: none;
+    border-radius: 2px;
+    padding: .8em 0;
+    font-weight: 900;
+    font-family: 'Work Sans', sans-serif;
+}
 
 .contact-description {
     width: 500px;
@@ -377,13 +437,3 @@ input {
 }
 
 
-.input-box, .input-box label {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin: 16px 12px 8px 12px;
-}
-
-.button {
-    margin: 12px 12px 16px 12px;
-}
