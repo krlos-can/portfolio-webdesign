@@ -14,7 +14,7 @@ li, a {
 }
 
 /*Estableciento el tipo de fuente en títulos y subtítulos*/
-h1, h2, h3, h5 {
+h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -24,6 +24,10 @@ h1 {
 
 p, a, label {
     font-family: 'Work Sans', sans-serif;
+}
+
+p {
+    line-height: 1.5;
 }
 
 header, footer{
@@ -344,7 +348,8 @@ header, footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 56px 120px 56px 120px;
+    margin: 0 120px 0 120px;
+    height: 100vh;
 }
 
 .about-me-img {
@@ -355,7 +360,9 @@ header, footer{
 .experience {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4,180px);
+    margin-top: 24px;
+    margin-bottom: 56px;
     /*display: flex;
     align-items: center;
     justify-content: center;
@@ -363,9 +370,97 @@ header, footer{
 }
 
 
-/*.experience div {
-    margin: 0 80px 0 80px;
-}*/
+.experience-01 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    text-align: center;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.experience-circle-01 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    text-align: center;
+    align-self: center;
+}
+
+.experience-date-01 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    text-align: center;
+    align-self: center;
+}
+
+.experience-02 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    align-self: center;
+    text-align: center;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.experience-circle-02 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+    align-self: center;
+}
+
+.experience-date-02 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    align-self: center;
+}
+
+.experience-03 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: center;
+    text-align: center;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.experience-circle-03 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    text-align: center;
+    align-self: center;
+}
+
+.experience-date-03 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    text-align: center;
+    align-self: center;
+}
+
+.experience-04 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    align-self: center;
+    text-align: center;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.experience-circle-04 {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    text-align: center;
+    align-self: center;
+}
+
+.experience-date-04 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    text-align: center;
+    align-self: center;
+}
 
 .experience-title {
     margin: 0 120px 0 120px;
