@@ -338,6 +338,8 @@ header, footer{
     width: 600px;
 }
 
+
+/*About me page*/
 .about-me {
     display: flex;
     align-items: center;
@@ -351,22 +353,26 @@ header, footer{
 }
 
 .experience {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    /*display: flex;
     align-items: center;
     justify-content: center;
-    margin: 56px 120px 152px 120px;
+    margin: 56px 120px 152px 120px;*/
 }
 
-.experience div {
+
+/*.experience div {
     margin: 0 80px 0 80px;
-}
+}*/
 
 .experience-title {
     margin: 0 120px 0 120px;
 }
 
 
-/*Contact section*/
+/*Contact page*/
 
 .contact {
     display: flex;
@@ -407,8 +413,6 @@ header, footer{
     transform-origin: left top;
     color: rgb(7, 0, 150);
 }
-
-
 
 .form-label {
     color: var(--color);
